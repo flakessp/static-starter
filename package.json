@@ -7,5 +7,9 @@
   "devDependencies": {
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "dev": "webpack --mode development ./src/index.js --output ./dist/main.js --watch",
+    "build": "webpack --mode production ./src/index.js --output ./dist/main.js"
   }
 }
